@@ -13,7 +13,7 @@ $pw=$_POST['pw'];
 $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$pw';";
 $sql_result = mysqli_query ($conn, $sql) or die ('request "Could not execute SQL query" '.$sql);
 		$user = mysqli_fetch_assoc($sql_result);
-		if(!empty($user){
+		if(!empty($user)){
 			$_SESSION['user_info'] = $user['id'];
 			$_SESSION['name'] = $user['fname'] . " " . $user['lname'];
 			$_SESSION['email'] = $user['email']; 
@@ -111,8 +111,8 @@ $sql_result = mysqli_query ($conn, $sql) or die ('request "Could not execute SQL
 </style>
 <body>
 	<div id="loginarea">
-	<form id="login" action="login.php" onsubmit="return validate()" method="post" name="login">
-	<div id="logintext"> AdministratorLogin</div><br/><br/>
+	<form id="login" action="adminlogin.php" onsubmit="return validate()" method="post" name="login">
+	<div id="logintext">AdminLogin</div><br/><br/>
 	<table>
 		<tr><td><div class="data">Enter E-Mail ID:</div></td><td><input type="text" id="email" size="30" maxlength="30" name="email"/></td></tr>
 		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>

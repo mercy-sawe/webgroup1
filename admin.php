@@ -66,19 +66,12 @@
 	<div class="sidenav">
 		<h3>Rooms</h3><br>
 	<a href="addroom.php">Add rooms</a><br>
-	<a href="">Delete rooms</a><br>
-	<a href="">View rooms</a><br>
-	<a href="">Delete reservation</a><br>
+	<a href="viewrooms.php">View rooms</a><br>
 	<h3> Conference Rooms</h3><br>
 	<a href="conf_addroom.php">Add conference rooms</a><br>
-	<a href="">View rooms</a><br>
-	<a href="">Delete conference rooms</a><br>
-	<a href="">Delete reservation</a><br>
+	<a href="viewconf_rooms.php">View rooms</a><br>
 	<h3> Manage Users</h3><br>
-	<a href="">View users</a><br>
-	<a href="">Add users</a><br>
-	<a href="">Delete users</a><br>
-
+	<a href="viewusers.php">View users</a><br>
 </div>
 </body>
 </html>
